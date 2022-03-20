@@ -1,20 +1,20 @@
 import ReactDom from "react-dom";
 import React from "react";
+import InitialPage from "./components/initialPage/InitialPage";
+import resetCSS from "./styles/reset.css";
+import styleCSS from "./styles/style.css";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/footer";
+import Main from "./components/main/main";
 const appHtml = document.getElementById("root");
 export default function App() {
-   const [visible, setVisible] = React.useState(true);
     return (
-        <div id="app">
-            {visible? (
-                  <main>
-                  <div className="content">
-                      <img className="logo" src="./svg/logo.svg" alt="logo-light"></img>
-                      <h1>ZapRecall</h1>
-                      <div className="initial-buttom" onClick={() => setVisible(false)}><p>Iniciar Recall!</p></div>
-                  </div>
-              </main>
-            ): <></>}
-        </div>
+    <div id="app">
+        <InitialPage />
+        <Header />
+        <Main />
+        <Footer />
+    </div>
     )
 }
-ReactDom.render(<App />, appHtml)
+ReactDom.render(<App />, appHtml);
