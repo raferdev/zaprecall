@@ -96,7 +96,7 @@ main {
   border-radius: 5px;
   padding: 20px;
   display: flex;
-  margin-bottom: 25px
+  margin-bottom: 25px;
 }
 .initial-quest {
   height: 65px;
@@ -110,7 +110,7 @@ main {
   height: 131px;
 }
 .initial-quest h2,
-.quest h2{
+.quest h2 {
   font-family: "Recursive";
   font-style: normal;
   font-weight: 700;
@@ -127,6 +127,49 @@ main {
   right: 20px;
   width: 30px;
   height: 20px;
+}
+/* asware */
+.dont-remember,
+.dont-know,
+.remember {
+  width: 85px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.dont-remember {
+  background-color: rgba(255, 48, 48, 1);
+}
+.dont-know {
+  background-color: rgba(255, 146, 46, 1);
+}
+.remember {
+  background-color: rgba(47, 190, 52, 1);
+}
+.answare-rate{
+  position: absolute;
+  bottom:5px;
+  right: 0;
+  height: 38px;
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+
+}
+.answare-rate h2 {
+  color:#ffffff;
+  width: 30px;
+  font-family: "Recursive";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 /* footer */
 footer {
