@@ -87,6 +87,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 70px;
 }
 article {
   height: 65px;
@@ -116,7 +117,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
