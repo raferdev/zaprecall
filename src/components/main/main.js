@@ -5,7 +5,7 @@ export default function Main(props) {
     return ( 
         <main>
             {
-            deck.sort().map((deck,index) => <Render deck={deck}index={index} redActv={redActv} setPoints={setPoints}/>)
+            deck.sort().map((deck,index) => <Render key={index} deck={deck}index={index} redActv={redActv} setPoints={setPoints}/>)
             }
         </main>
     )};

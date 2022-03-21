@@ -36,7 +36,7 @@ export default function Footer(props) {
       {activity.length === deck.length ? (
         <div className="final-game">
           <header className="adv-title">
-            <img className={advertise[points].class} src={advertise[points].src} alt={advertise[points].alt}/>
+            <img key = {points} className={advertise[points].class} src={advertise[points].src} alt={advertise[points].alt}/>
             <h2>{advertise[points].title}</h2>
           </header>
           <p>{advertise[points].msg}</p>
@@ -48,8 +48,8 @@ export default function Footer(props) {
         {activity.length}/{deck.length} CONCLUÍDOS
       </h2>
       <div>
-        {activity.map((img) => (
-          <img
+        {activity.map((img,index) => (
+          <img key={index}
             className={images[img].class}
             src={images[img].src}
             alt={images[img].alt}
