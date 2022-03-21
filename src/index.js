@@ -8,12 +8,16 @@ import Footer from "./components/footer/footer";
 import Main from "./components/main/main";
 const appHtml = document.getElementById("root");
 export default function App() {
+    const [activity,setActivity] = React.useState([]);
+    function redActv(type) {
+        setActivity(act => [...act,type])
+    }
     return (
     <div id="app">
         <InitialPage />
         <Header />
-        <Main />
-        <Footer />
+        <Main redActv={redActv}/>
+        <Footer activity={activity} />
     </div>
     )
 }

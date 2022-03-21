@@ -118,8 +118,8 @@ main {
   line-height: 19px;
   color: #333333;
 }
-.play-outline {
-  font-size: 23px;
+.play {
+  height: 23px;
 }
 .turn {
   position: absolute;
@@ -127,6 +127,34 @@ main {
   right: 20px;
   width: 30px;
   height: 20px;
+}
+.help,.close,.check {
+  height: 23px;
+}
+.close {
+  fill:#FF3030
+}
+.check {
+  color:#2FBE34
+}
+.help {
+  color:#FF922E;
+}
+.initial-quest .red {
+  color: #FF3030;
+  text-decoration-line: line-through;
+}
+.red {
+  color: #FF3030;
+  text-decoration-line: line-through;
+}
+.initial-quest .orange {
+  color: #FF922E;
+  text-decoration-line: line-through;
+}
+.initial-quest .green {
+  color: #2FBE34;
+  text-decoration-line: line-through;
 }
 /* asware */
 .dont-remember,
@@ -160,7 +188,7 @@ main {
 }
 .answare-rate h2 {
   color:#ffffff;
-  width: 30px;
+  width: 70px;
   font-family: "Recursive";
   font-style: normal;
   font-weight: 400;
@@ -174,6 +202,7 @@ main {
 /* footer */
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -184,6 +213,9 @@ footer {
   background: #ffffff;
   box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
 }
+footer img {
+  margin: 0 3px;
+}
 footer h2 {
   font-family: "Recursive";
   font-style: normal;
@@ -191,4 +223,5 @@ footer h2 {
   font-size: 18px;
   line-height: 22px;
   color: #333333;
+  margin-bottom: 4px;
 }
