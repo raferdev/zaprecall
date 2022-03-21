@@ -21,5 +21,5 @@ export const deck =  [{
     answare:"Passar diferentes informações para componentes."
 }, {
     quest:"Usamos estado (state) para __",
-    answare:"Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente."
+    answare:"Dizer para o React quais informações quando atualizadas devem renderizar a tela."
 }];

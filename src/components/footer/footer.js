@@ -36,7 +36,7 @@ export default function Footer(props) {
       {activity.length === deck.length ? (
         <div className="final-game">
           <header className="adv-title">
-            <img class={advertise[points].class} src={advertise[points].src} alt={advertise[points].alt}/>
+            <img className={advertise[points].class} src={advertise[points].src} alt={advertise[points].alt}/>
             <h2>{advertise[points].title}</h2>
           </header>
           <p>{advertise[points].msg}</p>
@@ -50,7 +50,7 @@ export default function Footer(props) {
       <div>
         {activity.map((img) => (
           <img
-            class={images[img].class}
+            className={images[img].class}
             src={images[img].src}
             alt={images[img].alt}
           />
