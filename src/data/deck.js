@@ -1,25 +1,25 @@
 export const deck =  [{
-    pergunta:"O que é JSX?",
-    reposta:"Uma extensão de linguagem do JavaScript."
+    quest:"O que é JSX?",
+    answare:"Uma extensão de linguagem do JavaScript."
 },{
-    pergunta:"O React é __",
-    resposta:"Uma biblioteca JavaScript para construção de interfaces."
+    quest:"O React é __",
+    answare:"Uma biblioteca JavaScript para construção de interfaces."
 }, {
-    pergunta:"Componentes devem iniciar com __ ",
-    resposta:"Letra maiúscula."
+    quest:"Componentes devem iniciar com __ ",
+    answare:"Letra maiúscula."
 }, {
-    pergunta:"Podemos colocar __ dentro do JSX",
-    reposta:"Expressões."
+    quest:"Podemos colocar __ dentro do JSX",
+    answare:"Expressões."
 },{
-    pergunta:"O ReactDOM nos ajuda __",
-    resposta:"Interagindo com a DOM para colocar componentes React na mesma."
+    quest:"O ReactDOM nos ajuda __",
+    answare:"Interagindo com a DOM para colocar componentes React na mesma."
 }, {
-    pergunta:"Usamos o npm para __",
-    resposta:"Gerenciar os pacotes necessários e suas dependências."
+    quest:"Usamos o npm para __",
+    answare:"Gerenciar os pacotes necessários e suas dependências."
 }, {
-    pergunta:"Usamos props para __",
-    resposta:"Passar diferentes informações para componentes."
+    quest:"Usamos props para __",
+    answare:"Passar diferentes informações para componentes."
 }, {
-    pergunta:"Usamos estado (state) para __",
-    resposta:"Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente."
+    quest:"Usamos estado (state) para __",
+    answare:"Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente."
 }];
