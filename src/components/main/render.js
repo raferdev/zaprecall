@@ -5,11 +5,12 @@ import close from "../../assets/images/close-circle.svg"
 import play from "../../assets/images/play-outline.svg"
 import React from "react";
 export function Render(props) {
-    const {deck,index, redActv} = props
+    const {deck,index, redActv, setPoints} = props
     const [actvQuest, setActvQuest] = React.useState(-1);
     const [answare, setAnsware] = React.useState(false);
     const [rate, setRate] = React.useState("");
-    const [icon, setIcon] = React.useState(0)
+    const [icon, setIcon] = React.useState(0);
+    const [click, setClick] = React.useState(true)
     const images = [{class:"play",src:play,alt:"play"},
     {class:"close",src:close,alt:"close"},
     {class:"help",src:help,alt:"help"},
@@ -25,13 +26,13 @@ export function Render(props) {
       <h2>{conteudo}</h2>
       {answare ? (
         <div className="answare-rate" onClick={() => setActvQuest(-1)}>
-          <div className="dont-remember" onClick={() => setRate("red")-setIcon(1)-redActv(0)}>
+          <div className="dont-remember" onClick={() => setRate("red")-setIcon(1)-redActv(0)-setClick(false)-setPoints(1)}>
             <h2>Não lembrei</h2>
           </div>
-          <div className="dont-know" onClick={() => setRate("orange")-setIcon(2)-redActv(1)}>
+          <div className="dont-know" onClick={() => setRate("orange")-setIcon(2)-redActv(1)-setClick(false)}>
             <h2>Quase não lembrei</h2>
           </div>
-          <div className="remember" onClick={() => setRate("green")-setIcon(4)-redActv(2)}>
+          <div className="remember" onClick={() => setRate("green")-setIcon(4)-redActv(2)-setClick(false)}>
             <h2>Zap!</h2>
           </div>
         </div>
@@ -42,8 +43,8 @@ export function Render(props) {
   ) : (
     <article
       key={index}
-      className="initial-quest"
-      onClick={() => setActvQuest(index) - setAnsware(false)}
+      className="initial-quest" 
+      onClick={click?(() => setActvQuest(index) - setAnsware(false)):()=>setClick(false)}
     >
       <h2 className={rate}>Pergunta {index + 1}</h2>
       <img className={images[icon].class} src={images[icon].src} alt={images[icon].alt} />

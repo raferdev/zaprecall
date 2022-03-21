@@ -9,6 +9,7 @@ import Main from "./components/main/main";
 const appHtml = document.getElementById("root");
 export default function App() {
     const [activity,setActivity] = React.useState([]);
+    const [points, setPoints] = React.useState(0);
     function redActv(type) {
         setActivity(act => [...act,type])
     }
@@ -16,8 +17,8 @@ export default function App() {
     <div id="app">
         <InitialPage />
         <Header />
-        <Main redActv={redActv}/>
-        <Footer activity={activity} />
+        <Main redActv={redActv} setPoints={setPoints}/>
+        <Footer activity={activity} points={points}/>
     </div>
     )
 }

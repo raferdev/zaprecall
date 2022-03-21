@@ -128,32 +128,34 @@ main {
   width: 30px;
   height: 20px;
 }
-.help,.close,.check {
+.help,
+.close,
+.check {
   height: 23px;
 }
 .close {
-  fill:#FF3030
+  fill: #ff3030;
 }
 .check {
-  color:#2FBE34
+  color: #2fbe34;
 }
 .help {
-  color:#FF922E;
+  color: #ff922e;
 }
 .initial-quest .red {
-  color: #FF3030;
+  color: #ff3030;
   text-decoration-line: line-through;
 }
 .red {
-  color: #FF3030;
+  color: #ff3030;
   text-decoration-line: line-through;
 }
 .initial-quest .orange {
-  color: #FF922E;
+  color: #ff922e;
   text-decoration-line: line-through;
 }
 .initial-quest .green {
-  color: #2FBE34;
+  color: #2fbe34;
   text-decoration-line: line-through;
 }
 /* asware */
@@ -176,18 +178,17 @@ main {
 .remember {
   background-color: rgba(47, 190, 52, 1);
 }
-.answare-rate{
+.answare-rate {
   position: absolute;
-  bottom:5px;
+  bottom: 5px;
   right: 0;
   height: 38px;
   width: 100%;
   display: flex;
-  justify-content:space-around;
-
+  justify-content: space-around;
 }
 .answare-rate h2 {
-  color:#ffffff;
+  color: #ffffff;
   width: 70px;
   font-family: "Recursive";
   font-style: normal;
@@ -200,7 +201,7 @@ main {
   text-align: center;
 }
 /* footer */
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,10 +214,12 @@ footer {
   background: #ffffff;
   box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
 }
-footer img {
+.footer img,
+.final-footer img {
   margin: 0 3px;
 }
-footer h2 {
+.footer h2,
+.final-footer h2 {
   font-family: "Recursive";
   font-style: normal;
   font-weight: 400;
@@ -224,4 +227,65 @@ footer h2 {
   line-height: 22px;
   color: #333333;
   margin-bottom: 4px;
+}
+.happy {
+  height: 23px;
+}
+.sad {
+  height: 23px;
+}
+.final-game {
+  height: 96px;
+  margin-bottom: 15px;
+}
+.final-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+.adv-title {
+  height: 50px;
+}
+.adv-title h2 {
+  font-family: "Recursive";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+.final-footer p {
+  width: 300px;
+  font-family: "Recursive";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #333333;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 167px;
+  height: 32px;
+  background: #fb6b6b;
+  border-radius: 5px;
+  margin: 25px 0;
+}
+.button h2 {
+  font-family: "Recursive";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
 }
